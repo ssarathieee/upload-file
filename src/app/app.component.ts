@@ -88,7 +88,6 @@ export class AppComponent {
         headers: new HttpHeaders(),responseType: 'text'
       }).subscribe(response => {
         console.log('Files uploaded successfully', response);
-        alert("File uploaded successfully")
       }, error => {
         console.error('Error uploading files', error);
       });
